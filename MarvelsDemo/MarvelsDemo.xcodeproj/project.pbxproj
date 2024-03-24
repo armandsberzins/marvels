@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA7092E52BB0934400F196E0 /* CharacterGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7092E42BB0934400F196E0 /* CharacterGrid.swift */; };
+		FA7092E82BB09B0000F196E0 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = FA7092E72BB09B0000F196E0 /* SwiftUIIntrospect */; };
+		FA7092EA2BB09B0000F196E0 /* SwiftUIIntrospect-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FA7092E92BB09B0000F196E0 /* SwiftUIIntrospect-Dynamic */; };
+		FA7092EC2BB09B0000F196E0 /* SwiftUIIntrospect-Static in Frameworks */ = {isa = PBXBuildFile; productRef = FA7092EB2BB09B0000F196E0 /* SwiftUIIntrospect-Static */; };
 		FADFD6482B949C230058F348 /* MarvelsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFD6472B949C230058F348 /* MarvelsDemoApp.swift */; };
 		FADFD64A2B949C230058F348 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFD6492B949C230058F348 /* RootView.swift */; };
 		FADFD64C2B949C240058F348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADFD64B2B949C240058F348 /* Assets.xcassets */; };
@@ -26,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA7092E42BB0934400F196E0 /* CharacterGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGrid.swift; sourceTree = "<group>"; };
 		FADFD6442B949C230058F348 /* MarvelsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADFD6472B949C230058F348 /* MarvelsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelsDemoApp.swift; sourceTree = "<group>"; };
 		FADFD6492B949C230058F348 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -50,12 +55,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7092E82BB09B0000F196E0 /* SwiftUIIntrospect in Frameworks */,
+				FA7092EA2BB09B0000F196E0 /* SwiftUIIntrospect-Dynamic in Frameworks */,
+				FA7092EC2BB09B0000F196E0 /* SwiftUIIntrospect-Static in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA7092E32BB0932200F196E0 /* Grids */ = {
+			isa = PBXGroup;
+			children = (
+				FA7092E42BB0934400F196E0 /* CharacterGrid.swift */,
+			);
+			path = Grids;
+			sourceTree = "<group>";
+		};
 		FADFD63B2B949C230058F348 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +148,7 @@
 		FADFD65B2B949EED0058F348 /* View Components */ = {
 			isa = PBXGroup;
 			children = (
+				FA7092E32BB0932200F196E0 /* Grids */,
 				FADFD6772B94F1DF0058F348 /* Cells */,
 				FADFD6712B94F0EC0058F348 /* Text */,
 			);
@@ -199,6 +216,11 @@
 			dependencies = (
 			);
 			name = MarvelsDemo;
+			packageProductDependencies = (
+				FA7092E72BB09B0000F196E0 /* SwiftUIIntrospect */,
+				FA7092E92BB09B0000F196E0 /* SwiftUIIntrospect-Dynamic */,
+				FA7092EB2BB09B0000F196E0 /* SwiftUIIntrospect-Static */,
+			);
 			productName = MarvelsDemo;
 			productReference = FADFD6442B949C230058F348 /* MarvelsDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -227,6 +249,9 @@
 				Base,
 			);
 			mainGroup = FADFD63B2B949C230058F348;
+			packageReferences = (
+				FA7092E62BB09B0000F196E0 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
+			);
 			productRefGroup = FADFD6452B949C230058F348 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7092E52BB0934400F196E0 /* CharacterGrid.swift in Sources */,
 				FADFD66A2B94A4030058F348 /* VilliansListViewModel.swift in Sources */,
 				FADFD6672B94A3DC0058F348 /* HeroListViewModel.swift in Sources */,
 				FADFD6562B949C3A0058F348 /* Character.swift in Sources */,
@@ -470,6 +496,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA7092E62BB09B0000F196E0 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA7092E72BB09B0000F196E0 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA7092E62BB09B0000F196E0 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+		FA7092E92BB09B0000F196E0 /* SwiftUIIntrospect-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA7092E62BB09B0000F196E0 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = "SwiftUIIntrospect-Dynamic";
+		};
+		FA7092EB2BB09B0000F196E0 /* SwiftUIIntrospect-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA7092E62BB09B0000F196E0 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = "SwiftUIIntrospect-Static";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FADFD63C2B949C230058F348 /* Project object */;
 }

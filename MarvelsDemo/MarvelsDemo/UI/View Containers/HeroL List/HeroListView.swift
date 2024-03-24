@@ -15,6 +15,7 @@ struct HeroListView: View {
         VStack {
             makeTitle()
             makeHeroList(items: viewModel.heros)
+            CharactersGrid(charactersList: viewModel.heros, selectedHero: $selectedHero)
         }
         .sheet(item: self.$selectedHero) { hero in
             CharacterView(character: hero)

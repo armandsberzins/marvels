@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftUIIntrospect
 
 struct RootView: View {
     @StateObject private var tabController = TabController()
@@ -22,7 +23,10 @@ struct RootView: View {
                 .tabItem {
                     Label("Villians", systemImage: "v.circle.fill")
                 }
-        }.accentColor(.secondaryText)
+        }.introspect(.tabView, on: .iOS(.v17)) { tabController in
+            tabController.tabBar.tintColor = UIColor(Color.accentColor)
+            tabController.tabBar.backgroundColor = UIColor(Color.tabBar)
+        }
     }
 }
 
