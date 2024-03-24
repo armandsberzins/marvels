@@ -16,6 +16,6 @@ struct LargeText: View {
                 .font(.largeTitle)
                 .multilineTextAlignment(.leading)
             Spacer()
-        }.foregroundStyle(.white)
+        }.foregroundStyle(.mainText)
     }
 }

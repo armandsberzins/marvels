@@ -18,7 +18,12 @@ struct CharacterCell: View {
                     FootnoteText(text: mainAbility)
                 }
             }
+            Image(charachter.profileImageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .clipShape(Circle())
         }
+        .frame(maxHeight: 80)
         .listRowBackground(Color.black)
     }
 }

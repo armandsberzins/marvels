@@ -24,6 +24,10 @@ struct CharacterView: View {
             }
             LargeText(text: character.heroName)
                 .padding(16)
+            Image(character.profileImageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(.horizontal, 16)
             HStack {
                 Text(character.abilities[0])
                     .padding(4)
@@ -47,7 +51,3 @@ struct CharacterView: View {
         }.background(.black)
     }
 }
-
-//#Preview {
-//    CharacterView()
-//}

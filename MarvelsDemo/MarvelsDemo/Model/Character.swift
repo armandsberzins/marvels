@@ -17,4 +17,5 @@ struct Character: Identifiable {
     let bio: String
     let abilities: [String]
     let type: CharacterType
+    let profileImageName: String
 }

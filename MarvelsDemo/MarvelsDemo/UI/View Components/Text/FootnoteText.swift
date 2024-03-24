@@ -13,7 +13,7 @@ struct FootnoteText: View {
     var body: some View {
         HStack {
             Text(text)
-                .foregroundStyle(.gray)
+                .foregroundStyle(.secondaryText)
             Spacer()
         }
     }

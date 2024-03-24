@@ -22,7 +22,7 @@ struct RootView: View {
                 .tabItem {
                     Label("Villians", systemImage: "v.circle.fill")
                 }
-        }.accentColor(.white)
+        }.accentColor(.secondaryText)
     }
 }
 

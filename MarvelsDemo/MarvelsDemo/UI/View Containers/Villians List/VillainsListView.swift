@@ -19,7 +19,7 @@ struct VillainsListView: View {
         .sheet(item: self.$selectedHero) { hero in
             CharacterView(character: hero)
         }
-        .background(Color.purple)
+        .background(Color.villiansBackground)
         .onAppear {
             viewModel.loadData()
         }
@@ -29,7 +29,7 @@ struct VillainsListView: View {
         HStack {
             Spacer()
             ViewTitleText(text: "Villains")
-                .foregroundStyle(.white)
+                .foregroundStyle(.mainText)
                 .padding(16)
         }
     }
