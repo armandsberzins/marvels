@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1896712D87068000277206 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = FA1896702D87068000277206 /* SwiftUIIntrospect */; };
+		FA1896752D87068000277206 /* SwiftUIIntrospect-Static in Frameworks */ = {isa = PBXBuildFile; productRef = FA1896742D87068000277206 /* SwiftUIIntrospect-Static */; };
 		FA7092E52BB0934400F196E0 /* CharacterGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7092E42BB0934400F196E0 /* CharacterGrid.swift */; };
-		FA7092E82BB09B0000F196E0 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = FA7092E72BB09B0000F196E0 /* SwiftUIIntrospect */; };
-		FA7092EA2BB09B0000F196E0 /* SwiftUIIntrospect-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FA7092E92BB09B0000F196E0 /* SwiftUIIntrospect-Dynamic */; };
-		FA7092EC2BB09B0000F196E0 /* SwiftUIIntrospect-Static in Frameworks */ = {isa = PBXBuildFile; productRef = FA7092EB2BB09B0000F196E0 /* SwiftUIIntrospect-Static */; };
 		FADFD6482B949C230058F348 /* MarvelsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFD6472B949C230058F348 /* MarvelsDemoApp.swift */; };
 		FADFD64A2B949C230058F348 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFD6492B949C230058F348 /* RootView.swift */; };
 		FADFD64C2B949C240058F348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADFD64B2B949C240058F348 /* Assets.xcassets */; };
@@ -28,6 +27,19 @@
 		FADFD6762B94F17B0058F348 /* ViewTitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFD6752B94F17B0058F348 /* ViewTitleText.swift */; };
 		FADFD6792B94F1F60058F348 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFD6782B94F1F60058F348 /* CharacterCell.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA1896772D8706CB00277206 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA7092E42BB0934400F196E0 /* CharacterGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGrid.swift; sourceTree = "<group>"; };
@@ -55,15 +67,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7092E82BB09B0000F196E0 /* SwiftUIIntrospect in Frameworks */,
-				FA7092EA2BB09B0000F196E0 /* SwiftUIIntrospect-Dynamic in Frameworks */,
-				FA7092EC2BB09B0000F196E0 /* SwiftUIIntrospect-Static in Frameworks */,
+				FA1896712D87068000277206 /* SwiftUIIntrospect in Frameworks */,
+				FA1896752D87068000277206 /* SwiftUIIntrospect-Static in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA1896792D87072B00277206 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA7092E32BB0932200F196E0 /* Grids */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				FADFD6462B949C230058F348 /* MarvelsDemo */,
+				FA1896792D87072B00277206 /* Frameworks */,
 				FADFD6452B949C230058F348 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -210,6 +229,7 @@
 				FADFD6402B949C230058F348 /* Sources */,
 				FADFD6412B949C230058F348 /* Frameworks */,
 				FADFD6422B949C230058F348 /* Resources */,
+				FA1896772D8706CB00277206 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,9 +237,8 @@
 			);
 			name = MarvelsDemo;
 			packageProductDependencies = (
-				FA7092E72BB09B0000F196E0 /* SwiftUIIntrospect */,
-				FA7092E92BB09B0000F196E0 /* SwiftUIIntrospect-Dynamic */,
-				FA7092EB2BB09B0000F196E0 /* SwiftUIIntrospect-Static */,
+				FA1896702D87068000277206 /* SwiftUIIntrospect */,
+				FA1896742D87068000277206 /* SwiftUIIntrospect-Static */,
 			);
 			productName = MarvelsDemo;
 			productReference = FADFD6442B949C230058F348 /* MarvelsDemo.app */;
@@ -250,7 +269,7 @@
 			);
 			mainGroup = FADFD63B2B949C230058F348;
 			packageReferences = (
-				FA7092E62BB09B0000F196E0 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
+				FA18966F2D87068000277206 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
 			);
 			productRefGroup = FADFD6452B949C230058F348 /* Products */;
 			projectDirPath = "";
@@ -498,30 +517,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FA7092E62BB09B0000F196E0 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+		FA18966F2D87068000277206 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/siteline/swiftui-introspect";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.3;
+				minimumVersion = 1.3.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FA7092E72BB09B0000F196E0 /* SwiftUIIntrospect */ = {
+		FA1896702D87068000277206 /* SwiftUIIntrospect */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA7092E62BB09B0000F196E0 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			package = FA18966F2D87068000277206 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
 			productName = SwiftUIIntrospect;
 		};
-		FA7092E92BB09B0000F196E0 /* SwiftUIIntrospect-Dynamic */ = {
+		FA1896742D87068000277206 /* SwiftUIIntrospect-Static */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA7092E62BB09B0000F196E0 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
-			productName = "SwiftUIIntrospect-Dynamic";
-		};
-		FA7092EB2BB09B0000F196E0 /* SwiftUIIntrospect-Static */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FA7092E62BB09B0000F196E0 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			package = FA18966F2D87068000277206 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
 			productName = "SwiftUIIntrospect-Static";
 		};
 /* End XCSwiftPackageProductDependency section */
